@@ -11,18 +11,33 @@
 
 <body>
     <p>
-        Enter your name: <br/>
-        <input type="text" id="name" name="name" placeholder="Enter your name" onkeyup="nameValid()" required> <br/>
+        Enter your name: <br />
+        <input type="text" id="name" name="name" placeholder="Enter your name" onkeyup="nameValid()" required> <br />
         <span id="nameError" class="error"></span>
     </p>
     <p>
-        Enter your password: <br/>
-        <input type="password" id="password" name="password" placeholder="Enter your password" onkeyup="passValid()" required> <br/>
-        <div id="passwordError" class="error"></div>
+        Enter your password: <br />
+        <input type="password" id="password" name="password" placeholder="Enter your password" onkeyup="passValid()"
+            required> <br />
+    <div id="passwordError" class="error"></div>
     </p>
-    <!-- <p>
-    
-    </p> -->
+    <p>
+        Enter your phone number: <br />
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number" onkeyup="phoneValid()"
+            required> <br />
+    <div id="phoneError" class="error"></div>
+    </p>
+    <p>
+        Enter your email: <br />
+        <input type="email" id="email" name="email" placeholder="Enter your email" onkeyup="emailValid()" required>
+        <br />
+    <div id="emailError" class="error"></div>
+    </p>
+    <p>
+        Enter your address: <br />
+        <input type="text" id="address" name="address" placeholder="Enter your address" onkeyup="addressValid()"
+            required> <br />
+    <div id="addressError" class="error"></div>
+    </p>
 </body>
-
 </html>

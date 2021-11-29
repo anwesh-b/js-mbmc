@@ -39,3 +39,42 @@ const passValid = () => {
     return true;
 }
 
+const phoneValid = () => {
+    const phone = document.getElementById('phone').value;
+    const phoneError = document.getElementById('phoneError');
+
+    if (phone.length !== 10) {
+        phoneError.innerHTML = 'Phone number must be 10 digits long.';
+        return false;
+    }
+
+    phoneError.innerHTML = '';
+    return true;
+}
+
+const emailValid = () => {
+    const email = document.getElementById('email').value;
+    const emailError = document.getElementById('emailError');
+
+    if (!email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+        emailError.innerHTML = 'Email must be valid.';
+        return false;
+    }
+
+    emailError.innerHTML = '';
+    return true;
+}
+
+const addressValid = () => {
+    const address = document.getElementById('address').value;
+    const addressError = document.getElementById('addressError');
+
+    if (address.length < 10) {
+        addressError.innerHTML = 'Address must be at least 10 characters long.';
+        return false;
+    }
+
+    addressError.innerHTML = '';
+    return true;
+}
+
